@@ -5,11 +5,13 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (println "Hello, World!"))
+  (def a (conj args "grt"))
+  (println a)
+  a)
 
-(-main)
+(-main "abc" "def")
 
-(+ 3 4)
+(+ 3 54)
 
 (jt/local-date)
 (jt/local-time)
