@@ -19,5 +19,7 @@ elpa/
 server/
 transient/
 .clj-kondo/
+*.iml
+.lsp/
 
 

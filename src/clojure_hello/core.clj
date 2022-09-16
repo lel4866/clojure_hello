@@ -2,15 +2,16 @@
   (:require [java-time :as jt])
   (:gen-class))
 
-(defn mypline [mystr]
+(defn mypline
   "replacement for println since println doest display in gvim on Windows"
-  (print (str mystr "\n"))) 
+  [mystr]
+  (print (str mystr "\n")))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (def a (conj args "grt"))
-  (mypline a)
+  (let [a (conj args "grt")]
+    (mypline a))
   ;; (println "hello")
   (+ 2 3))
 
